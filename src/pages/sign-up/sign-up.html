@@ -1,0 +1,11 @@
+<ion-content  class="body">
+
+    <form class="box" action="index.html" method="post">
+        <h1>Sign Up</h1>
+        <input type="email" name="" placeholder="e-mail" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}">
+        <input type="password" name="" placeholder="Password"  [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}">
+        <input type="submit" name="" value="Sign Up" (click)="register(user)">
+        <input type="button" value="back"  (click)="back()">
+      </form>
+
+</ion-content>

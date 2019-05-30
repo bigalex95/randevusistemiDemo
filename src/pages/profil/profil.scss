@@ -1,0 +1,45 @@
+page-profil {
+
+    ion-title, h1 {
+        text-align: center;
+    }
+    
+    .bg {
+        background: linear-gradient(to top, #32ff7e 0%, white 100%);
+    }
+
+    .profileImage {
+        border-radius: 30%;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .button {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, #03a9f4, #f441a5);
+    }
+    
+    ion-card {
+        background: url(./../../../assets/spring.jfif) no-repeat;
+        background-size: 100% 200px;
+    }
+    ion-avatar {
+        width: 150px;
+        height: 200px;
+        margin: auto;
+    }
+    
+}

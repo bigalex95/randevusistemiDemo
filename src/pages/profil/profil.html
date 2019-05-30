@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-avatar>
+      <img src="./../../../assets/logo.png">
+    </ion-avatar>
+
+    <ion-card-content>
+      <h1 text-center>
+        {{(profileData | async)?.firstName}} {{(profileData | async)?.lastName}}
+      </h1>
+      <h2 text-center>
+        <b>{{(profileData | async)?.companyName}}</b>
+      </h2>
+    </ion-card-content>
+
+    <button ion-button class="button" style="top: 70%; left: 50%;" (click)="setTagsPage()">set Tags</button>
+    <button ion-button class="button" style="top: 80%; left: 50%;" (click)="reportPage()">Report</button>
+    <button ion-button class="button" style="top: 90%; left: 50%;" (click)="exit()">Çıkış</button>
+
+  </ion-card>
+
+
+</ion-content>
